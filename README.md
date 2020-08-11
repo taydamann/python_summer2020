@@ -1,1 +1,1 @@
-# python_summer2020
+# Python Short Course - Summer 2020
