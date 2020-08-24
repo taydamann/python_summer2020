@@ -2,20 +2,6 @@
 
 Introduction to Python 3 designed to Ph.D. Students in Political Science (WUSTL)
 
-## Topics covered:
-
-
-1. Data Structure, Syntax, Loops, and Functions
-2. Namespace and classes
-3. Errors, Exceptions, and Testing
-4. Web Scraping (Beautiful Soup and Selenium)
-5. Regular Expressions and Naive Bayes Classifier
-6. APIs (Twitter, Google Maps, and Pollster)
-7. SQL and Database
-8. Complexity, Recursion, and Sorting
-9. More on Data Structure
-
-
 ## Topics covered and Schedule:
 
 | Day   | Date      | Topic                        | Homework				      |
