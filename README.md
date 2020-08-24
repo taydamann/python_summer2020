@@ -14,10 +14,11 @@
 8. SQL and Database
 9. Complexity, Recursion, and Sorting
 
-2020 Course material is an updated version of previous iterations of this course. 
+
 
 ### Previous Instructors:
-Ryden Buttler (2019), Erin Rossiter (2018),  Michele Torres (2017), David Carlson (2016), and Betül Demirkaya (2015)
+Ryden Buttler (2019), Erin Rossiter (2018),  Michele Torres (2017), David Carlson (2016), and Betül Demirkaya (2015), and Matt Dickenson (2014)
 
-### First Instructor: 
-Matt Dickenson
+### Course Materials:
+Course materials created by Matt Dickeson. Changes over the years made by each instructor, including myself. Due to the Coronavirus pandemic, the 2020 iteration was designed to be taught online. Prior versions of this course can all be found on GitHub.
+
