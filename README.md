@@ -20,16 +20,16 @@ Introduction to Python 3 designed to Ph.D. Students in Political Science (WUSTL)
 
 | Day   | Date      | Topic                        | Homework				      |
 |------ |-----------|------------------------------|------------------------------|
-| Day01 | Mon. 8/24 | Syntax, Data Structure, and Functions |	                          |	  
+| Day01 | Mon. 8/24 | Data Structure and Syntax    |	                		  |	  
 | Day02 | Wed. 8/26 | Namespace and classes        | HW1 assigned (due Mon. 8/31) |
-| Day03 | Fri. 8/28 | Errors, Exceptions, and Testing     |	                          |
+| Day03 | Fri. 8/28 | Errors and Exceptions        |	                          |
 | Day04 | Mon. 8/31 | Web Scraping                 | HW2 assigned (due Thr. 9/03) |
-| Day05 | Wed. 9/02 | Regular Expressions     					   |							  |
-| Day06 | Fri. 9/04 | APIs                                         | HW3 assigned (due Thr. 9/10) |
-| Day07 | TBD.      | SQL and Database							   | 							  |
-| Day08 | Tue. 9/09 | Complexity, Recursion, and Sorting           | HW4 assigned (due Mon. 9/14) |
-| Day09 | Fri. 9/11 | More on Data Structure                       | HW5 assigned (due Thr. 9/17) |
-| Poster session    | TBD                                          | 					          | 
+| Day05 | Wed. 9/02 | Regular Expressions          |							  |
+| Day06 | Fri. 9/04 | APIs                         | HW3 assigned (due Thr. 9/10) |
+| Day07 | TBD.      | SQL and Database	           | 							  |
+| Day08 | Tue. 9/09 | Recursion, and Sorting       | HW4 assigned (due Mon. 9/14) |
+| Day09 | Fri. 9/11 | More on Data Structure       | HW5 assigned (due Thr. 9/17) |
+| Poster session    | TBD                          | 					          | 
 
 
 ## Previous Instructors:
