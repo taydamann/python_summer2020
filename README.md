@@ -20,7 +20,7 @@ Introduction to Python 3 designed to Ph.D. Students in Political Science (WUSTL)
 
 | Day   | Date      | Topic                        | Homework				      |
 |------ |-----------|------------------------------|------------------------------|
-| Day01 | Mon. 8/24 | Syntax, Loops, and Functions |	                          |	  
+| Day01 | Mon. 8/24 | Syntax, Data Structure, and Functions |	                          |	  
 | Day02 | Wed. 8/26 | Namespace and classes        | HW1 assigned (due Mon. 8/31) |
 | Day03 | Fri. 8/28 | Errors, Exceptions, and Testing     |	                          |
 | Day04 | Mon. 8/31 | Web Scraping                 | HW2 assigned (due Thr. 9/03) |
