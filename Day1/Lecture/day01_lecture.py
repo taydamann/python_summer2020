@@ -112,7 +112,7 @@ wustl_chr = [i for i in wustl]
 wustl_chr
 ''.join(wustl_chr) # the output is a string
 
-#---------- Intergers ----------#
+#---------- Integers ----------#
 
 # We can use all mathematical operators with them
 # Integers are not rounded down in Python 3
@@ -124,8 +124,8 @@ whole = 5//3 # the result is an integer
 type(whole)
 whole
 remainder = 5%3
-print("Five divded by three is {} and {} fifths".format(whole, remainder)) # Or
-print("Five divded by three is %d and %d fifths" %(whole, remainder)) 
+print("Five divided by three is {} and {} fifths".format(whole, remainder)) # Or
+print("Five divided by three is %d and %d fifths" %(whole, remainder)) 
 
 # As with strings, the assignment is flexible
 five = 5
@@ -237,7 +237,7 @@ myInfo.values() # return the dictionary's value
 
 # We cannot use index
 myInfo[0] ##!!!
-myInfo["name"]
+myInfo["research"]
 
 # We can add new elements to a dictionary
 myInfo["last_name"] = "Cunha"
@@ -266,7 +266,6 @@ elif x == 2:
 	print('x is two')
  else:
 	print('x is neither one nor two') # IndentationError
-
 
 # Can be conditions or boolean (True or False)
 True == (1 == 1.0)
@@ -323,6 +322,7 @@ for i in range(1, 10):
 
 for i in range(1, 10):
 	if i == 5:
+		print('I have a 5')
 		pass
 	print(i)
 
@@ -340,10 +340,10 @@ for i in range(1, 10):
 # Don't forget to add return for output
 
 # Input, output
-def add_squares(x, y):
+def add_squares(x = 2, y = 2):
 	return x**2 + y**2
 
-add_squares(3,4)
+add_squares()
 
 
 
