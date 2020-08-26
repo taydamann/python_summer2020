@@ -78,6 +78,6 @@ print(clock1)
 print(clock1 == Clock(0, 5))
 
 print("testing subtraction")
-clock1 - 1000000
+clock1 - 100
 print(clock1)
 
