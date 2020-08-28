@@ -71,4 +71,4 @@ print(clock1 == Clock(0, 5)) # True
 
 print("testing subtraction")
 clock1 - 100
-print(clock1) # 22:45
+print(clock1) # 22:25
