@@ -166,7 +166,7 @@ divide_two_things(10, 3)
 
 # Exceptions are helpful so our code doesn't break!
 # Example 5:
-list1 = [10, 9, 8] 
+list1 = [15, 9, 8] 
 list2 = [1, 1, 0]
 # zip() creates an iterator of tuples based on iterable objects (such as lists)
 [print("i value = {} and j value {}".format(i, j)) for i, j in zip(list1, list2)]
@@ -244,7 +244,10 @@ print_integer(10) # Let check the output
 mylist = [1, 2, 3, 4.5, "6", "7.8", 8, 9, "done"]
 out = [mylist.pop(0)]
 for i in mylist:
-    out.append(out[-1] + i)
+    try:
+        out.append(out[-1] + i)
+    except TypeError:
+        print('It is not a number')
 
 # Answer:
 mylist = [1, 2, 3, 4.5, "6", "7.8", 8, 9, "done"]
@@ -269,17 +272,18 @@ out
 #   executed only if all iterations are completed
 
 for n in range(2, 10):
-    for x in range(2, n): 
-        if n % x == 0:
-            print(n, 'equals', x, '*', n//x)
-            continue
-        else:
-            print(n, 'is a prime number')
+    for x in range(2, 5): 
+        if 5 % x == 0:
+            print(5, 'equals', x, '*', 5//x)
+            break
+    else:
+        print(5, 'is a prime number')
 
 # We want to only print "n is a prime number" once
 # We want to avoid repetition if 2x3 = 6, 
 # we don't need to print 3x2 = 6
 # How we solve it?
+
 
 # Solution:
 for n in range(2, 10):
@@ -312,11 +316,12 @@ assert avg(2, 2) == 4
 
 # We can also use a test runner, such as unittest
 
+
 import unittest # unit testing module 
 from myscript import * # the script you want to test
 
 # Mock example
-class mytest(unittest.TestCase): 
+class Mytest(unittest.TestCase): 
 
     def test_one(self):
         self.assertEqual("result", script.func(input))
