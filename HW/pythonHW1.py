@@ -16,7 +16,7 @@ class Portfolio():
         self.mf = mf
         self.hist = hist
     
-    #create function to add cash    
+    #create method to add cash    
     def addCash(self, addedCash):
         if type(addedCash) in {int, float}:
             self.cash += addedCash #update cash amount
@@ -24,7 +24,7 @@ class Portfolio():
             return self
         else: return print("Please enter a cash amount in the form of a float or integer.")
 
-    #create function to withdraw cash
+    #create method to withdraw cash
     def withdrawCash(self, withdrawal):
         if self.cash >= withdrawal:
             self.cash = self.cash - withdrawal #update cash amount
@@ -32,35 +32,35 @@ class Portfolio():
             return self
         else: return print("There is not enough money in this account to withdraw that amount.")
     
-    #create function to buy stock
+    #create method to buy stock
     def buyStock(self, shares, stock):
         self.cash = self.cash - shares * stock.stockPrice #update cash amount
         self.stock[stock.stockTick] = stock.stockPrice #add stock to portfolio
         self.hist.append("Bought " + str(shares) + " shares of stock " + str(stock.stockTick)) #add transaction history
         return self
     
-    #create function to buy mutual fund
+    #create fmethod to buy mutual fund
     def buyMutualFund(self, mfTick, shares):
         self.cash = self.cash - shares #update cash amount
         self.mf[mfTick.mfTick] = shares #add mutual fund to portfolio
         self.hist.append("Bought " + str(shares) + " shares of mutual fund " + str(mfTick.mfTick)) #add transaction history
         return self
     
-    #create function to sell mutual fund
+    #create method to sell mutual fund
     def sellMutualFund(self, mfTick, mfShares):
         self.cash = self.cash + mfShares * round(ra.uniform(0.9, 1.2),2) #update cash amount
         del self.mf[mfTick.mfTick] #remove mf from portfolio
         self.hist.append("Sold " + str(mfShares) + " shares of mutual fund " + str(mfTick.mfTick)) #add transaction history
         return self
     
-    #create function to sell stock
+    #create method to sell stock
     def sellStock(self, stockPrice, stockTick):
         self.cash = self.cash + stockTick.stockPrice * round(ra.uniform(0.9 * stockPrice, 1.2 * stockPrice),2) #update cash amount
         del self.stock[stockTick.stockTick] #remove stock from portfolio
         self.hist.append("Sold " + str(stockPrice) + " shares of stock " + str(stockTick.stockTick)) #add transaction history
         return self
     
-    #create function to print transaction history
+    #create method to print transaction history
     def history(self):   
         print(self.hist)
     
