@@ -236,7 +236,6 @@ class School():
         for key in self.db.keys(): #loop through each key, automatically ordered
             sorted_students[key] = tuple(sorted(self.db[key])) #add dictionary entry with key = grade and entry = tuple of kids
         return sorted_students
-
  
     def grade(self, check_grade):
         if check_grade not in self.db: return None #if the key doesn't exist, there are no kids with that grade: return None
