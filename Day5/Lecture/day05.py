@@ -113,9 +113,13 @@ re.findall(r"\.", alltext)
 
 # all digits
 re.findall(r"\d", alltext) 
-# * Repeats the previous item zero or more times.
-re.findall(r"\d*", alltext) 
-# Repeats the previous item once or more. 
+# Match succeeds independently of the presence of the search string
+re.findall(r"\d*", alltext).remove('') 
+# r = re.findall(r"\d*", alltext)
+# while '' in r:
+  # r.remove('')
+# r  
+# At least one occurrence for the match to succeed ( 1 or many)
 re.findall(r"\d+", alltext)
 # Makes the preceding item optional. 
 re.findall(r"\d?", alltext) 
