@@ -21,7 +21,7 @@ with open("obama-nh.txt", "r") as f:
 ## Month: MM
 ## Day: DD
 ## Year: YY
-date = raw_input("Please enter a date in the format MM.DD.YY: ")
+date = input("Please enter a date in the format MM.DD.YY: ")
 
 
 
