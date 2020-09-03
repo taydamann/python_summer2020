@@ -68,6 +68,7 @@ os.chdir('/Users/pcunhasilva/Dropbox/PythonClass/Summer2020/Day6/Lecture')
 # pip3 install pollster
 
 # adapted from example.py at https://github.com/huffpostdata/python-pollster
+# more information here: https://app.swaggerhub.com/apis/huffpostdata/pollster-api/2.0.0
 
 import datetime # to format date
 import webbrowser # to open our browser
@@ -82,11 +83,11 @@ tags = api.tags_get() ## list of dictionary-looking objects
 # check out the slugs, anyway
 for t in tags:
 	print(t.slug)
-# slug is a unique identifier for a Chart
+# slug is a unique identifier 
 
 # 2016 president looks good
 charts = api.charts_get(tags = '2016-president')
-len(charts.items) # 50 polls
+len(charts.items) # 50 charts
 
 # what's in a single chart (aka plot)
 charts.items[0]
@@ -133,7 +134,6 @@ by_date
 
 # Now looking at question-level
 questions = api.questions_get(
-  cursor=None,                             # String | Special string to index into the Array
   tags='2016-president',                   # String | Comma-separated list of tag slugs (most Questions are not tagged)
   election_date=datetime.date(2016, 11, 8) # Date | Date of an election
 )
